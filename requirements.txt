@@ -1,0 +1,8 @@
+langchain>=0.3.27
+langchain-openai>=0.3.33
+langchain-chroma>=0.2.6
+langchain-community>=0.3.30
+langchain-text-splitters>=0.3.11
+chromadb>=1.1.0
+gradio>=5.47.2,<6.0
+python-dotenv>=1.1.1
