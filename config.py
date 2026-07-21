@@ -17,8 +17,8 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME", "knowledge_base")
 # --- Chunking --------------------------------------------------------------
 # Documents are split into overlapping chunks so retrieval is granular but
 # chunks keep enough surrounding context to stay meaningful.
-CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "1000"))     # characters per chunk
-CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "200"))  # overlap between chunks
+CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "500"))      # characters per chunk
+CHUNK_OVERLAP = int(os.getenv("CHUNK_OVERLAP", "100"))  # overlap between chunks
 
 # --- Retrieval -------------------------------------------------------------
-RETRIEVER_K = int(os.getenv("RETRIEVER_K", "4"))  # how many chunks to feed the LLM
+RETRIEVER_K = int(os.getenv("RETRIEVER_K", "3"))  # how many chunks to feed the LLM
